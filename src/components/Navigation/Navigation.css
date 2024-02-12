@@ -1,0 +1,175 @@
+.navigation-container {
+    height: 60px;
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 16px 32px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.navigation-container .logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: 500;
+}
+.nav-items li {
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.nav-items li:hover{
+    text-shadow: 0px .5px var(--black-color);
+}
+.nav-items .active {
+    font-weight: 700;
+}
+
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 7px;
+}
+
+.nav-icons img {
+    cursor: pointer;
+}
+
+.onlyDesktop {
+    display: none;
+}
+
+
+
+/* Menu */
+
+.menuOpen {
+    height: 100vh;
+    align-items: start;
+    position: relative;
+}
+
+.menuOpen .nav-items {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuOpen .menuItem {
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.menuContainer {
+    position: absolute;
+    width: 88%;
+    bottom: -270px;
+}
+
+.menuContainer .cart {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menuContainer .menuTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menuContainer .menu-social {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.cart .cartIcons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    border: none;
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 90%;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.menuCloseBtn {
+    height: 25px;
+    margin-top: 0px;
+    background-color:var(--black-color);
+    border-radius: 4px;
+}
+.nav-menu {
+    height: 40px;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .nav-items {
+        display: none;
+    }
+    .navigation-container {
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .onlyDesktop {
+        display: block;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .nav-items {
+        padding: 0px 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.pagenotfound-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+.pagenotfound-container a {
+    text-decoration: none;
+}
+.pagenotfound-container h2{
+    cursor: pointer;
+    color: var(--blue-color);
+}

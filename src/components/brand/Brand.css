@@ -1,0 +1,10 @@
+.brand-container {
+    background-color: var(--white-color);
+    padding: 16px 30px;
+}
+
+@media screen and (max-width:768px) {
+    .sliderImages img {
+        margin: 0 auto;
+    }
+}

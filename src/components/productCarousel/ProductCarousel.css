@@ -1,0 +1,13 @@
+.product-container {
+    margin-top: 20px;
+}
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.product-container .slick-dots{
+    bottom: -31px;
+}
+.product-container .slick-dots li button:before {
+    font-size: 12px;
+}

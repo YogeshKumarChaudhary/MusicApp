@@ -1,0 +1,60 @@
+.valuesSection-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.topValues,
+.bottomValues {
+    display: flex;
+    gap: 30px;
+}
+
+/* ValuesCard */
+.valuesCard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 8px;
+    background-color: #F3F5F7;
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.valuesCard-container:hover {
+    box-shadow: 0px 0px 8px gray;
+}
+
+.valuesImage img {
+    width: 30px;
+}
+
+.valuesContent div {
+    font-weight: 600;
+}
+
+.valuesContent p {
+    font-size: 14px;
+}
+
+@media screen and (max-width:450px) {
+    .valuesCard-container {
+        width: 150px;
+        padding: 15px;
+    }
+
+    .valuesSection-container {
+        gap: 10px;
+    }
+
+    .topValues,
+    .bottomValues {
+        gap: 10px;
+    }
+
+}

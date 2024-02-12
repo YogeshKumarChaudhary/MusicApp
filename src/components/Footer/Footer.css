@@ -1,0 +1,136 @@
+.footer-container {
+    background-color: var(--black-color);
+    margin-top: -6px;
+}
+
+.footer-container .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    height: 250px;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerTop .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footerTop .logo div {
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footerTop .logo span {
+    background-color: #6C7275;
+    height: 30px;
+    width: 2px;
+}
+
+.footerTop .logo p {
+    font-size: 15px;
+    color: #E8ECEF;
+}
+
+.footerTop .rightNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #FEFEFE;
+}
+
+.footerTop .rightNav li {
+    cursor: pointer;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #6C7275;
+    padding-top: 15px;
+}
+
+.footerBottom .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footerBottom .copyright p {
+    color: #E8ECEF;
+    font-size: 14px;
+}
+
+.footerBottom .terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-weight: 600;
+}
+
+.footerBottom .terms p {
+    cursor: pointer;
+}
+
+.footerBottom .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footerBottom .social img {
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .footer-container .container {
+        height: auto;
+    }
+
+    .footerTop {
+        flex-direction: column;
+    }
+
+    .footerTop .logo {
+        flex-direction: column;
+    }
+
+    .footerTop .logo span {
+        background-color: #6C7275;
+        height: 2px;
+        width: 30px;
+    }
+
+    .footerTop .rightNav {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .footerBottom {
+        flex-direction: column-reverse;
+    }
+
+    .footerBottom .copyright {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .footerBottom .social {}
+}

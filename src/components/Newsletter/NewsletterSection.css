@@ -1,0 +1,77 @@
+.newsletter-container {
+    margin-top: 20px;
+}
+
+.newsletterImageBox {
+    position: relative;
+}
+
+.newsletterImageBox .newsBanner {
+    width: 100%;
+}
+
+.newsletterContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    gap: 10px;
+}
+
+.newsletterContent h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.newsletterInput,
+.inputField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletterInput {
+    gap: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.inputField input,
+.newsletterInput button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 8px;
+    font-weight: 500;
+    color: gray;
+}
+
+@media screen and (max-width:1024px) {
+    .newsletterImageBox .newsBanner {
+        display: none;
+    }
+
+    .newsletter-container {
+        position: relative;
+        background-color: #F2F4F6;
+        text-align: center;
+    }
+
+    .newsletterContent {
+        position: static;
+        padding: 40px;
+    }
+
+    .newsletterInput {
+        margin-top: 10px;
+        gap: 0px;
+    }
+
+    .inputField {
+        padding: 0px;
+    }
+
+}

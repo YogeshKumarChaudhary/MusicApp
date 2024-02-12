@@ -1,0 +1,50 @@
+.instagram-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.instaTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.instaTop span {
+    font-weight: 600;
+    color: #797979;
+}
+.instaTop h3 {
+    font-size: 30px;
+}
+
+.instaTop div {
+    color: #797979;
+    font-weight: 500;
+}
+
+.instaBottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.instaBox img {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width:473px) {
+    .instaBox img {
+        width: 300px;
+        height: auto;
+    }
+    .instaBottom {
+        gap: 15px;
+    }
+}

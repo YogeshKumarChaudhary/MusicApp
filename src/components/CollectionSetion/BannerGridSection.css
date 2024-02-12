@@ -1,0 +1,155 @@
+.banner-container {
+    margin-top: 10px;
+}
+
+.banner-collection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.grid-main,
+.grid-small {
+    height: 100%;
+    position: relative;
+}
+
+.mainImage {
+    height: 500px;
+    width: 500px;
+}
+
+.smallImage {
+    height: 240px;
+    width: 500px;
+}
+
+.grid-small {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grid-main img,
+.grid-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.banner-collection-content {
+    position: absolute;
+    bottom: 45px;
+    left: 30px;
+}
+
+.banner-collection-content h4,
+.banner-collection-small-content h4 {
+    font-size: 20px;
+}
+
+.banner-collection-small-content {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+.grid-small-up,
+.grid-small-down {
+    position: relative;
+}
+
+@media screen and (min-width:1400px) {
+    .banner-collection {
+        justify-content: space-evenly;
+    }
+
+    .banner-collection-content {
+        bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .grid-main,
+    .grid-small {
+        width: 450px;
+        height: 604px;
+    }
+
+    .grid-main img {
+        width: 90%;
+    }
+
+    .grid-small img {
+        width: 90%;
+    }
+
+    .banner-collection-content {
+        bottom: 152px;
+    }
+
+}
+
+@media screen and (max-width:980px) {
+    .banner-collection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-main,
+    .grid-small {
+        width: 450px;
+        height: 544px;
+    }
+
+    .grid-main {
+        margin-left: 0px;
+    }
+
+    .grid-small {
+        margin-top: -23px;
+    }
+
+
+    .grid-main img {
+        height: 100%;
+        width: 90%;
+    }
+
+    .grid-small img {
+        width: 90%;
+    }
+
+    .banner-collection-content {
+        bottom: 100px;
+    }
+
+    .section-heading {
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:550px) {
+
+    .grid-main,
+    .grid-small {
+        width: 302px;
+        height: 544px;
+    }
+
+    .mainImage,
+    .smallImage {
+        width: 100%;
+    }
+
+    .grid-main img,
+    .grid-small img {
+        width: 100%;
+    }
+
+}
